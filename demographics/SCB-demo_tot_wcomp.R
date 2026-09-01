@@ -231,6 +231,20 @@ demo_tot_wcomp <- function(
     population_change_2020 / population_2020 * 100
   
   
+  ## Previous year's population
+  previous_actual_year <- latest_actual_year - 1
+  
+  population_previous <- 
+    population_latest -
+    folkokning %>%
+    filter(ar == as.Date(paste0(latest_actual_year, "-01-01"))) %>%
+    pull(antal_personer)
+  
+  
+  ## Change compared with previous year
+  population_change_previous <- 
+    population_latest - population_previous
+  
   
   # RETURN HELPER ------------------------------------------------------
   
@@ -240,8 +254,15 @@ demo_tot_wcomp <- function(
       plot = plot_object,
       region = region_name,
       region_code = geografi,
+      
       latest_actual_year = latest_actual_year,
+      previous_actual_year = previous_actual_year,
+      
       population_latest = population_latest,
+      population_previous = population_previous,
+      
+      population_change_previous = population_change_previous,
+      
       population_2020 = population_2020,
       population_change_2020 = population_change_2020,
       population_change_2020_pct = population_change_2020_pct
