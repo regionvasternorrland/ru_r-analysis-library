@@ -20,7 +20,7 @@ Vidare innehåller filnamnet även ämnesområdet, ex. för `demographics` skriv
 
 ## Användning
 
-Script i detta repository fungerar som gemensamma original för analyser som kan återanvändas i flera R-produkter.
+Script i detta repository fungerar som gemensamma original för analyser som kan återanvändas i flera R-produkter - med andra ord är script i detta repo "förvaltningslagda".
 
 I den R-produkt där scriptet används kopieras det till `R/shared/` i aktuell R-produkt. 
 Mappen `shared` markerar just att scriptet har sitt original i detta repository.
