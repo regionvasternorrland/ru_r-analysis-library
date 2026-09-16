@@ -5,6 +5,7 @@ Gemensamt bibliotek med återanvändbara R-script för samhällsanalys inom Regi
 ## Struktur
 
 Inga script ska läggas i roten, utan helst klassificeras till ämne/tema eller alternativ namngiven mapp.
+Exempel på ämne/teman:
 
 - `demographics/` – demografiska analyser
 - `rmi/` – analyser baserat på SCB:s regionala matchningsindikatorer
